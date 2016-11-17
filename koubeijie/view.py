@@ -38,4 +38,5 @@ def wechat_login(request):
 
 
 def wx(request):
+    print request.GET.get('echostr')
     return request.GET.get('echostr')
