@@ -21,4 +21,5 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^hello/$', hello),
     url(r'^wechat_login/$', wechat_login),
+    url(r'^wx/$', wx),
 ]

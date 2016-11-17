@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-
+import Exception as Exception
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from koubeijie.service.wechat_service import *
@@ -35,3 +35,6 @@ def wechat_login(request):
         return render_to_response("login/wechat.html", request_dict)
     except Exception as e:
         print e
+
+def wx(request):
+    return request.GET.get('echostr')
