@@ -36,5 +36,6 @@ def wechat_login(request):
     except Exception as e:
         print e
 
+
 def wx(request):
     return request.GET.get('echostr')
